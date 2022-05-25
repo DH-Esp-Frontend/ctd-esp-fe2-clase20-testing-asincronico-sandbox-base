@@ -3,13 +3,13 @@ import axios from "axios";
 
 interface UserState {
   data: User | null;
-  loading: string;
+  loading: "loading" |"success" |"error"
   error: string;
 }
 
 const initialState: UserState = {
   data: null,
-  loading: "idle",
+  loading: "loading",
   error: "",
 };
 
